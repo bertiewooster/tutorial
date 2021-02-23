@@ -29,3 +29,7 @@ end
 get '/z/:z' do
   erb :index
 end
+
+get '/hello' do
+  erb :hello, :locals => {:greeting => "Howdy"}
+end
